@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+.wrapper {
+    background: url('./assests/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    width: 80%;
+    height: 95vh;
+    margin: auto;
+}
+
+.col1 {
+    width: 40px;
+    height: inherit;
+    background: #00aeff;
+}
+.col2 {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header{
+    width: 80%;
+    height: 43px;
+    justify-content: space-around;
+    display: flex;
+}
+.icons{
+    height: 43px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    width: 320px;
+}
+.icon img {
+    width: 80px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.headerText{
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+}
+.main {
+    width: 80%;
+    height: 40%;
+    margin-top: 48px;
+}
+.mainHead {
+    font-size: 36px;
+    line-height: 58px;
+    font-weight: normal;
+}
+.mainName{
+   font-size: 43px;
+   font-weight: 500;
+   font-family: 'Raleway', sans-serif;
+}
+.mainText1 {
+    line-height: 36px;
+    font-style: normal;
+    width: 50%;
+}
+.mainText2 {
+    font-style: 24px;
+    color: #00aeff;
+}
+
+.footer {
+    width: 80%;
+    margin-top: 2rem;
+}
+.footer img {
+    width: 190px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
