@@ -50,7 +50,9 @@ a {
     height: 43px;
     justify-content: space-around;
     display: flex;
+    flex-direction: row;
 }
+
 .icons{
     height: 43px;
     display: flex;
@@ -60,7 +62,7 @@ a {
     width: 320px;
 }
 .icon img {
-    width: 80px;
+    width: 100px;
     height: 40px;
     background-repeat: no-repeat;
     background-position: center;
@@ -108,4 +110,75 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:767px){
+    .wrapper{
+        overflow: hidden;
+    } 
+    .header  {
+        flex-direction: column;
+       justify-content: space-between;
+       align-items: flex-start;
+    }
+    .icons {
+        width: 250px;
+    }
+    .icon img {
+        width: 60px;
+        height: 30px;
+    }
+    .headerText a p {
+        width: auto;
+        font-style: 16px;
+        line-height: 24px;
+    }
+    .main{
+        margin: 1.37rem 0;
+    }
+    .mainHead {
+        font-style: 24px;
+        line-height: 40px;
+        margin-bottom: 1rem;
+    }
+    .mainName{
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 0.8rem;
+    }
+    .mainText1 {
+        width: 80%; 
+        line-height: 30px; 
+    }
+    .footer img {
+        width: 100px;
+    }
+    .footer h4 {
+        font-size: 24px;
+    }
+    .footer p {
+        font-size: 16px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:900px) {
+    .wrapper  {
+       margin-bottom: 20px;
+       overflow: hidden;
+    }
+    .header  {
+        flex-direction: column;
+        width: 95%;
+    }
+    .icons {
+        width: 260px;
+    }
+    .icon img {
+        width: 80px;
+        height: 30px;
+    }
+    .headerText a p {
+        width: 600px;
+        font-style: 18px;
+    }
 }
